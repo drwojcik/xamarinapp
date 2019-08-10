@@ -16,6 +16,17 @@ namespace xamarinapp
         public MainPage()
         {
             InitializeComponent();
+
+            var vm = new MainViewModel();
+            this.BindingContext = vm;
         }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Lista());
+            //Application.Current.MainPage.Navigation.PushAsync(new Lista());
+            
+        }
+     
     }
 }
