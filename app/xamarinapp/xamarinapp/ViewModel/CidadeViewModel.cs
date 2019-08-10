@@ -14,7 +14,7 @@ namespace xamarinapp
         public ObservableCollection<Cidades> Itens
         {
             get => itens;
-            set { Itens = value; OnPropertyChanged(); }
+            set { itens = value; OnPropertyChanged(); }
         }
 
         public CidadeViewModel()
@@ -23,10 +23,13 @@ namespace xamarinapp
 
                 new List<Cidades>
                 {
-                    new Cidades {NomeCidade = "Curitiba"}
+                    new Cidades {NomeCidade = "Curitiba"},
+                    new Cidades {NomeCidade = "Sao Paulo"},
+                    new Cidades {NomeCidade = "Colombo"},
+                    new Cidades {NomeCidade = "Piraqueara"}
                 });
         }
-        //william@mkn.dev
+    
 
     }
 }

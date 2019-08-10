@@ -12,7 +12,7 @@ namespace xamarinapp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Lista : ContentPage
     {
-        public IList<Cidades> Cidades { get; private set; }
+       
         public Lista()
         {
             InitializeComponent();

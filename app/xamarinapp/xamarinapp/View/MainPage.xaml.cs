@@ -21,10 +21,10 @@ namespace xamarinapp
             this.BindingContext = vm;
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private  void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Lista());
-            //Application.Current.MainPage.Navigation.PushAsync(new Lista());
+           // await Navigation.PushAsync(new Lista()); para dar certo assim precisa do metodo async
+            Application.Current.MainPage.Navigation.PushAsync(new Lista());
             
         }
      
